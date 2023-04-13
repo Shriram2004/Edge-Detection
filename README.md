@@ -28,7 +28,7 @@ Developed by : Shriram R
 Register number : 212221240053
 
 ### ORIGINAL IMAGE:
-
+```python
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -41,10 +41,10 @@ plt.show()
 
 gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 new_image = cv2.GaussianBlur(gray_image,(3,3),0)
-
+```
 ### SOBEL EDGE DETECTOR
 ### Sobel X:
-
+```python
 sobelx = cv2.Sobel(new_image,cv2.CV_64F,1,0,ksize = 5)
 plt.figure(figsize=(8,8))
 plt.subplot(1,2,1)
@@ -56,10 +56,10 @@ plt.title("Sobel X")
 plt.xticks([])
 plt.yticks([])
 plt.show()
-
+```
 
 ### Sobel Y:
-
+```python
 sobely = cv2.Sobel(new_image,cv2.CV_64F,0,1,ksize = 5)
 plt.figure(figsize = (8,8))
 plt.subplot(1,2,1)
@@ -73,9 +73,9 @@ plt.yticks([])
 plt.show()
 
 
-
+```
 ### Sobel XY:
-
+```python
 sobelxy = cv2.Sobel(new_image,cv2.CV_64F,1,1,ksize=5)
 plt.figure(figsize = (8,8))
 plt.subplot(1,2,1)
@@ -87,10 +87,10 @@ plt.title('Sobel XY')
 plt.xticks([])
 plt.yticks([])
 plt.show()
-
+```
 
 ### LAPLACIAN EDGE DETECTOR:
-
+```python
 laplacian = cv2.Laplacian(new_image,cv2.CV_64F)
 plt.figure(figsize = (8,8))
 plt.subplot(1,2,1)
@@ -104,9 +104,9 @@ plt.yticks([])
 plt.show()
 
 
-
+```
 ### CANNY EDGE DETECTOR:
-
+```python
 canny_edge = cv2.Canny(new_image,120,150)
 plt.figure(figsize = (8,8))
 plt.subplot(1,2,1)
@@ -118,7 +118,7 @@ plt.title('Canny Edges')
 plt.xticks([])
 plt.yticks([])
 plt.show()
-
+```
 
 ## OUTPUT:
 ### ORIGINAL IMAGE:
