@@ -32,7 +32,7 @@ Register number : 212221240053
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-input_image = cv2.imread("berrypie.jpg")
+input_image = cv2.imread("emi.jpg")
 input_image = cv2.cvtColor(input_image,cv2.COLOR_BGR2RGB)
 plt.axis('off')
 plt.imshow(input_image)
